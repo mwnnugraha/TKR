@@ -134,9 +134,9 @@ $kerjasama=App\Perusahaan::all();
         <div class="section-header">          
           <h2 class="section-title">Kurikulum</h2>
           <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
           <div class="testimonial-item">
-                <img src="{{asset('img/'.$komponen->foto_kaprog)}}" alt="Client Testimonoal" style="height: 100px" />
+                <img src="{{asset('img/'.$komponen->foto_kaprog)}}" alt="Client Testimonoal" 
+                style="height: 250px; width: 250px" />
                 <div class="testimonial-text">
               
                 <div class="social-icons">
@@ -154,9 +154,8 @@ $kerjasama=App\Perusahaan::all();
                   </div>
                   <h3>{{$komponen->target_kurikulum}}</h4>
                 </div>
-              </div>
-        </div>
-       
+          </div>
+        <div/>
       </div>
     </section>
     <!-- Features Section End -->    
@@ -242,13 +241,15 @@ $kerjasama=App\Perusahaan::all();
           <div class="col-md-12">
             <div class="touch-slider owl-carousel owl-theme">
               <div class="testimonial-item">
-                <img src="{{asset('mate/img/testimonial/customer1.jpg')}}" alt="Client Testimonoal" />
+                <img src="{{asset('mate/img/testimonial/a.png')}}" alt="Client Testimonoal" 
+                style="height: 200px; width: 200px" />
                 <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-                  <h3>Jone Deam</h3>
-                  <span>Fondor of Jalmori</span>
+                 <p>Mantap.. Lulusan seperti ini (SMK Assalaam Bandung), yang dibutuhkan oleh dunia industri Disiplin,Terampil, dan Siap pakai, pertahankan terus kualitas lulusan SMK Assalaam Bandung.</p>
+                  <h3>Jafar sidik</h3>
+                  <span>Mekanik Toyota PT. WIJAYA LESTARI DAGO </span>
                 </div>
               </div>
+
               <div class="testimonial-item">
                 <img src="{{asset('mate/img/testimonial/customer2.jpg')}}" alt="Client Testimonoal" />
                 <div class="testimonial-text">
@@ -257,6 +258,7 @@ $kerjasama=App\Perusahaan::all();
                   <span>President Lexo Inc</span>
                 </div>
               </div>
+
               <div class="testimonial-item">
                 <img src="{{asset('mate/img/testimonial/customer3.jpg')}}" alt="Client Testimonoal" />
                 <div class="testimonial-text">
@@ -265,6 +267,7 @@ $kerjasama=App\Perusahaan::all();
                   <span>CEO Optima Inc</span>
                 </div>
               </div>
+
               <div class="testimonial-item">
                 <img src="{{asset('mate/img/testimonial/customer4.jpg')}}" alt="Client Testimonoal" />
                 <div class="testimonial-text">
@@ -282,35 +285,7 @@ $kerjasama=App\Perusahaan::all();
 
 
 
-      <div id="testimonial" class="section" data-stellar-background-ratio="0.1">
-      <div class="container">
-     <center> <h4>Testimoni Industri</h4></center><br>
-        <div class="row justify-content-md-center">
-          <div class="col-md-12">
-            <div class="touch-slider owl-carousel owl-theme">
-              <div class="testimonial-item">
-                <img src="{{asset('mate/img/testimonial/customer1.jpg')}}" alt="Client Testimonoal" />
-                <div class="testimonial-text">
-                  <p>Mantap.. Lulusan seperti ini (SMK Assalaam Bandung), yang dibutuhkan oleh dunia industri Disiplin,Terampil, dan Siap pakai, pertahankan terus kualitas lulusan SMK Assalaam Bandung.</p>
-                  <h3>Toto S. Prasetyanto</h3>
-                  <span>SERVICE AREA MANAGER KAWASAKI - JAWA BARAT</span>
-                </div>
-              </div>
-              <div class="testimonial-item">
-                <img src="{{asset('mate/img/testimonial/customer2.jpg')}}" alt="Client Testimonoal" />
-                <div class="testimonial-text">
-                  <p>Keterampilan ganda (Roda 4 dan Roda 2) menjadikan siswa SMK Assalaam Bandung memiliki peluang kerja lebih besar ketimbang lulusan lainnya.</p>
-                  <h3>Sandy</h3>
-                  <span>KEPALA DEPARTEMEN PELATIHAN (PT. DAYA ADICIPTA MUSTIKA - HONDA MOTOR JAWABARAT)</span>
-                </div>
-              </div>
-             
-              
-            </div>
-          </div>
-        </div>        
-      </div>
-    </div>
+      
     <!-- testimonial Section Start -->
 
     <!-- Contact Section Start -->

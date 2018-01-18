@@ -6,7 +6,7 @@
                                 
                             </div>
                                 <div class="col-md-4">
-                                    {!! Form::text('nama',null,['class'=>'form-control']) !!}
+                                   <input type="text" name="nama" class="btn btn-default btn-block" required=""></input>
                                     {!! $errors->first('nama','<p class="help-block">:message</p>') !!}
                                 </div>
                             </div>
@@ -17,7 +17,7 @@
                                 
                             </div>
                                 <div class="col-md-4">
-                                    {!! Form::text('testimonni',null,['class'=>'form-control']) !!}
+                                    <input type="text" name="testimoni" class="btn btn-default btn-block" required=""></input>
                                     {!! $errors->first('testimonni','<p class="help-block">:message</p>') !!}
                                 </div>
                             </div>
