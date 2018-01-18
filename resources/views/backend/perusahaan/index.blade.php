@@ -13,7 +13,9 @@
                         <table class="table">
                             <tr>
                                 <th>No</th>
+                                <th>Nama Perusahaan</th>
                                 <th>Logo</th>
+
                                 <th colspan="2">Opsi</th>
                             </tr>
                             @php

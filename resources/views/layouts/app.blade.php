@@ -35,6 +35,7 @@
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
+                    @role'admin'
                     <ul class="nav navbar-nav">
                         <li><a href="{{ url('/home') }}">Home</a></li>
                         <li><a href="{{ route('perusahaan.index') }}">Perusahaan</a></li>
@@ -43,6 +44,7 @@
                         <li><a href="{{ route('alumni.index') }}">Alumni</a></li>
                         <li><a href="{{ route('prestasi.index') }}">Prestasi</a></li>
                     </ul>
+                    @endrole
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">

@@ -1,5 +1,14 @@
 
                             
+           <div class="form-group{{ $errors->has('nama') ? 'has-error' : '' }}">
+                                {!! Form::label('nama','Nama Perusahaan *',['class'=>'col-md-4 col-md-offset-2']) !!}
+                                <div class="col-md-4">
+                                    <input type="text" name="nama" class="btn btn-default btn-block" required=""></input>
+                                    {!! $errors->first('nama','<p class="help-block">:message</p>') !!}
+                                </div>
+                            </div>
+
+
 
                             <div class="form-group{{ $errors->has('logo') ? 'has-error' : '' }}">
                             	{!! Form::label('logo','Logo Perusahaan *',['class'=>'col-md-4 col-md-offset-2']) !!}
