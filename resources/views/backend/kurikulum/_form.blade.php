@@ -2,7 +2,7 @@
                             
                             <div class="form-group{{ $errors->has('nama') ? 'has-error' : '' }}">
                             <div>
-                                {!! Form::label('nama','Nama Kaprog*',['class'=>'col-md-4 col-md-offset-2']) !!}
+                                {!! Form::label('nama','Nama Kaprog  :',['class'=>'col-md-2']) !!}
                                 
                             </div>
                                 <div class="col-md-4">
@@ -15,7 +15,7 @@
 
                             <div class="form-group{{ $errors->has('jabatan') ? 'has-error' : '' }}">
                             <div>
-                                {!! Form::label('jabatan','Jabatan Kaprog*',['class'=>'col-md-4 col-md-offset-2']) !!}
+                                {!! Form::label('jabatan','Jabatan Kaprog   :',['class'=>'col-md-2']) !!}
                                 
                             </div>
                                 <div class="col-md-4">
@@ -26,7 +26,7 @@
                            </div>
 
                             <div class="form-group{{ $errors->has('foto') ? 'has-error' : '' }}">
-                            	{!! Form::label('foto','Foto Kaprog *',['class'=>'col-md-4 col-md-offset-2']) !!}
+                            	{!! Form::label('foto','Foto Kaprog   :',['class'=>'col-md-2']) !!}
                                 <div class="col-md-4">
                                 @if(isset($kurikulum) && $kurikulum->foto)
                                 <p>
@@ -40,11 +40,13 @@
 
                              <div class="form-group{{ $errors->has('target') ? 'has-error' : '' }}">
                             <div>
-                                {!! Form::label('target','Target Capaian*',['class'=>'col-md-4 col-md-offset-2']) !!}
+                                {!! Form::label('target','Target Capaian   :',['class'=>'col-md-2']) !!}
                                 
+
                             </div>
-                                <div class="col-md-4">
-                                    <input type="text" name="target" class="btn btn-default btn-block" required=""></input>
+                                <div class="col-md-8">
+                                    <!-- <input type="textarea" name="target" class="ckd" required=""></input> -->
+                                    <textarea name="targer" class="ckeditor"></textarea>
                                     {!! $errors->first('target','<p class="help-block">:message</p>') !!}
                                 </div>
                            <br><br>

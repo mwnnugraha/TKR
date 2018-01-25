@@ -32,8 +32,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="{{asset('admin/css/custom.css')}}" rel="stylesheet">
 <!-- Metis Menu Plugin JavaScript -->
 <script src="{{asset('admin/js/metisMenu.min.js')}}"></script>
-<script src="{{asset('admin/js/custom.js')}}"></script>
-<!-- Graph JavaScript -->
+
+<script type="text/javascript" src="{{asset('ckeditor/ckeditor.js')}}"></script><!-- Graph JavaScript -->
 <script src="{{asset('admin/js/d3.v3.js')}}"></script>
 <script src="{{asset('admin/js/rickshaw.js')}}"></script>
 </head>

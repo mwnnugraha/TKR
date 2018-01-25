@@ -13,9 +13,9 @@
                         <table class="table">
                             <tr>
                                 <th>No</th>
-                                <th>Foto</th>
                                 <th>Nama</th>
                                 <th>Jabatan</th>
+                                <th>Foto</th>
                                 <th>Target Capaian</th>
                                 <th colspan="2">Opsi</th>
                             </tr>

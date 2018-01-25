@@ -2,7 +2,7 @@
                             
                             <div class="form-group{{ $errors->has('judul') ? 'has-error' : '' }}">
                             <div>
-                                {!! Form::label('judul','Judul Prestasi *',['class'=>'col-md-4 col-md-offset-2']) !!}
+                                {!! Form::label('judul','Judul Prestasi :',['class'=>'col-md-4 col-md-offset-2']) !!}
                                 
                             </div>
                                 <div class="col-md-4">
@@ -14,7 +14,7 @@
                             
 
                             <div class="form-group{{ $errors->has('gambar') ? 'has-error' : '' }}">
-                                {!! Form::label('gambar','Foto Prestasi *',['class'=>'col-md-4 col-md-offset-2']) !!}
+                                {!! Form::label('gambar','Foto Prestasi :',['class'=>'col-md-4 col-md-offset-2']) !!}
                                 <div class="col-md-4">
                                 @if(isset($prestasi) && $prestasi->gambar)
                                 <p>

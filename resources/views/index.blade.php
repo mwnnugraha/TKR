@@ -119,7 +119,7 @@ $kerjasama=App\Perusahaan::all();
         <div class="section-header">          
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Profil TKR</h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s"><br>
-          <h1><img src="{{asset('img/tkr1.jpg')}}" style="height: 150px">
+          <h1><img src="{{asset('img/tkr1.jpg')}}" style="height: 100px  width: 100px">
           <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">{{$komponen->profil}} </p>
         </div>
         <p></p>
@@ -133,7 +133,6 @@ $kerjasama=App\Perusahaan::all();
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title">Kurikulum</h2>
-          <hr class="lines">
           <div class="testimonial-item">
                 <img src="{{asset('img/'.$komponen->foto_kaprog)}}" alt="Client Testimonoal" 
                 style="height: 250px; width: 250px" />
@@ -166,27 +165,10 @@ $kerjasama=App\Perusahaan::all();
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title">Fasilitas</h2>
-          <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+          <p class="section-subtitle">
         </div>
         <div class="row">          
           <div class="col-md-12">
-            <!-- Portfolio Controller/Buttons -->
-            <div class="controls text-center">
-              <a class="filter active btn btn-common" data-filter="all" >
-                All 
-              </a>
-              <a class="filter btn btn-common" data-filter=".design">
-                Design 
-              </a>
-              <a class="filter btn btn-common" data-filter=".development">
-                Development
-              </a>
-              <a class="filter btn btn-common" data-filter=".print">
-                Print 
-              </a>
-            </div>
-            <!-- Portfolio Controller/Buttons Ends-->
           </div>
 
           <!-- Portfolio Recent Projects -->
@@ -195,7 +177,7 @@ $kerjasama=App\Perusahaan::all();
             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
               <div class="portfolio-item">
                 <div class="shot-item">
-                <img src="{{asset('image/'.$data->gambar)}}"> 
+                <img src="{{asset('image/'.$data->gambar)}}" alt="" style="height: 50px width: 50px"> 
                   <a class="overlay lightbox" href="{{asset('image/'.$data->gambar)}}">
                     <i class="lnr lnr-eye item-icon"></i>
                   </a>
@@ -218,9 +200,8 @@ $kerjasama=App\Perusahaan::all();
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title">Kerja Sama</h2>
-          <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
-        </div>
+          <p class="section-subtitle">
+          </div>
         <div class="row">
           @foreach($kerjasama as $data)
         <img src="{{asset('image/'.$data->logo)}}" alt="" style="height: 150px" />
@@ -251,29 +232,29 @@ $kerjasama=App\Perusahaan::all();
               </div>
 
               <div class="testimonial-item">
-                <img src="{{asset('mate/img/testimonial/customer2.jpg')}}" alt="Client Testimonoal" />
+                <img src="{{asset('mate/img/testimonial/customer2.jpg')}}" alt="Client Testimonoal"  style="height: 200px; width: 200px" />
                 <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-                  <h3>Oidila Matik</h3>
-                  <span>President Lexo Inc</span>
+                  <p>Mantap.. Lulusan seperti ini (SMK Assalaam Bandung), yang dibutuhkan oleh dunia industri Disiplin,Terampil, dan Siap pakai, pertahankan terus kualitas lulusan SMK Assalaam Bandung.</p>
+                  <h3>Jafar sidik</h3>
+                  <span>Mekanik Toyota PT. WIJAYA LESTARI DAGO </span>
                 </div>
               </div>
 
               <div class="testimonial-item">
-                <img src="{{asset('mate/img/testimonial/customer3.jpg')}}" alt="Client Testimonoal" />
+                <img src="{{asset('mate/img/testimonial/customer3.jpg')}}" alt="Client Testimonoal"  style="height: 200px; width: 200px"/>
                 <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-                  <h3>Alex Dattilo</h3>
-                  <span>CEO Optima Inc</span>
+                  <p>Mantap.. Lulusan seperti ini (SMK Assalaam Bandung), yang dibutuhkan oleh dunia industri Disiplin,Terampil, dan Siap pakai, pertahankan terus kualitas lulusan SMK Assalaam Bandung.</p>
+                  <h3>Jafar sidik</h3>
+                  <span>Mekanik Toyota PT. WIJAYA LESTARI DAGO </span>
                 </div>
               </div>
 
               <div class="testimonial-item">
-                <img src="{{asset('mate/img/testimonial/customer4.jpg')}}" alt="Client Testimonoal" />
+                <img src="{{asset('mate/img/testimonial/customer4.jpg')}}" alt="Client Testimonoal"  style="height: 200px; width: 200px"/>
                 <div class="testimonial-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
-                  <h3>Paul Kowalsy</h3>
-                  <span>CEO & Founder</span>
+                  <p>Mantap.. Lulusan seperti ini (SMK Assalaam Bandung), yang dibutuhkan oleh dunia industri Disiplin,Terampil, dan Siap pakai, pertahankan terus kualitas lulusan SMK Assalaam Bandung.</p>
+                  <h3>Jafar sidik</h3>
+                  <span>Mekanik Toyota PT. WIJAYA LESTARI DAGO </span>
                 </div>
               </div>
 

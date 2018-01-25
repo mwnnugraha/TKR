@@ -35,7 +35,7 @@
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-                    @role'admin'
+                    @role('admin')
                     <ul class="nav navbar-nav">
                         <li><a href="{{ url('/home') }}">Home</a></li>
                         <li><a href="{{ route('perusahaan.index') }}">Perusahaan</a></li>

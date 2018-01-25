@@ -2,7 +2,7 @@
                             
                             <div class="form-group{{ $errors->has('nama') ? 'has-error' : '' }}">
                             <div>
-                                {!! Form::label('nama','Nama *',['class'=>'col-md-4 col-md-offset-2']) !!}
+                                {!! Form::label('nama','Nama :',['class'=>'col-md-4 col-md-offset-2']) !!}
                                 
                             </div>
                                 <div class="col-md-4">
@@ -13,7 +13,7 @@
 
                               <div class="form-group{{ $errors->has('testimonni') ? 'has-error' : '' }}">
                             <div>
-                                {!! Form::label('testimonni','Testimoni *',['class'=>'col-md-4 col-md-offset-2']) !!}
+                                {!! Form::label('testimonni','Testimoni :',['class'=>'col-md-4 col-md-offset-2']) !!}
                                 
                             </div>
                                 <div class="col-md-4">
@@ -23,7 +23,7 @@
                             </div>
 
                             <div class="form-group{{ $errors->has('foto') ? 'has-error' : '' }}">
-                            	{!! Form::label('foto','Foto Alumni *',['class'=>'col-md-4 col-md-offset-2']) !!}
+                            	{!! Form::label('foto','Foto Alumni :',['class'=>'col-md-4 col-md-offset-2']) !!}
                                 <div class="col-md-4">
                                 @if(isset($alumni) && $alumni->foto)
                                 <p>
