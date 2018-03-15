@@ -62,7 +62,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</li>
 						
 						<li class="m_2"><a href="{{url('akun/profile')}}"><i class="fa fa-user"></i> Profil</a></li>
-						<li class="m_2"><a href="{{ route('logout') }}"><i class="fa fa-lock"></i> Logout</a></li>	
+
+
+
+						<li class="m_2"><a href="{{ route('logout') }} " onclick="event.preventDefault();
+ document.getElementById('logout-form').submit();"><i class="fa fa-lock"></i> Logout</a></li>
+
+
+  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+   {{ csrf_field() }}
+ </form>
+
+
 	        		</ul>
 	      		</li>
 			</ul>

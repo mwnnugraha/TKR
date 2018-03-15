@@ -4,7 +4,7 @@
 <br><br>
         <div class="col-md-12">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard
+                <div class="panel-heading">Kurikulum
                     <a href="{{route('kurikulum.create')}}" class="btn btn-primary pull-right btn-sm">Tamban Kurikulum</a>
                 </div>
 
@@ -20,7 +20,7 @@
                                 <th colspan="2">Opsi</th>
                             </tr>
                             @php
-                            $kurikulum = App\Kurikulum::all();
+                            $kurikulum = App\kurikulum::all();
                             $no = 1;
                             @endphp
                             @foreach($kurikulum as $data)

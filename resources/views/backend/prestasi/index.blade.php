@@ -4,7 +4,7 @@
 <br><br>
         <div class="col-md-12">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard
+                <div class="panel-heading">Prestasi
                     <a href="{{route('prestasi.create')}}" class="btn btn-primary pull-right btn-sm">Tambah Prestasi</a>
                 </div>
 

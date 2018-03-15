@@ -45,7 +45,7 @@ class KurikulumController extends Controller
             'nama'=>'required|unique:,title',
             'jabatan'=>'required|exists:kurikulums,id',
             'foto'=>'image|max:2048']);
-        $kurikulum = Kurikulum::create($request->except('foto'));
+        $kurikulum = kurikulum::create($request->except('foto'));
         if($request->hasFile('foto'))
         {
             $uploaded_cover=$request->file('foto');

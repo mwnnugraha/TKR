@@ -204,7 +204,7 @@ $kerjasama=App\Perusahaan::all();
           </div>
         <div class="row">
           @foreach($kerjasama as $data)
-        <img src="{{asset('image/'.$data->logo)}}" alt="" style="height: 150px" />
+        <img src="{{asset('image/'.$data->logo)}}" alt="" style="height: 150px width: 150px" />
          @endforeach
             </div>
           </div>

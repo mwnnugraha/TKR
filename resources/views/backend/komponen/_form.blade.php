@@ -23,7 +23,7 @@
                                 </div>
                             </div>
 
-                              <div class="form-group{{ $errors->has('nama_kaprog') ? 'has-error' : '' }}">
+                            <div class="form-group{{ $errors->has('nama_kaprog') ? 'has-error' : '' }}">
                             <div>
                                 {!! Form::label('nama_kaprog','Nama Kaprog:',['class'=>'col-md-4 col-md-offset-2']) !!}
                                 
