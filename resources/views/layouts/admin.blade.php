@@ -48,7 +48,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="{{asset('img/logo-1.png')}}" style="height: 50px">
+                 <img src="{{asset('img/logo-1.png')}}" style="height: 50px">
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-nav navbar-right">
