@@ -67,9 +67,6 @@ $alumni=App\alumni::all();
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#testimonial">Testimoni</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">Kontak</a>
-              </li>
             </ul>
           </div>
         </div>
@@ -124,7 +121,7 @@ $alumni=App\alumni::all();
         <div class="section-header">          
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Profil TKR</h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s"><br>
-          <h1><img src="{{asset('img/tkr.jpg')}}" style="height: 100px  width: 100px">
+          <h1><img src="{{asset('img/'.$komponen->logo)}}" style="height: 100px  width: 100px">
           <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">{{$komponen->profil}} </p>
         </div>
         <p></p>
@@ -361,7 +358,21 @@ $alumni=App\alumni::all();
         <div class="double-bounce1"></div>
         <div class="double-bounce2"></div>
       </div>
-    </div>     
+    </div>  
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5aabe185d7591465c708a192/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->   
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="{{asset('mate/js/jquery-min.js')}}"></script>
