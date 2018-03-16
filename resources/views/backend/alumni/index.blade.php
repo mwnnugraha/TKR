@@ -28,7 +28,7 @@
                                 <td>{{$no}}</td>
                                 <td><img src="{{asset('image/'.$data->foto)}}" style="height: 50px"></td>
                                 <td>{{$data->nama}}</td>
-                                <td>{{$data->testimonni}}</td>
+                                <td>{{$data->testimoni}}</td>
                                 <td><a href="{{route('alumni.edit',$data->id)}}" class="btn btn-warning btn-sm">Ubah</a></td>
                                 {!! Form::model($data, ['url'=>route('alumni.destroy',$data->id), 'method'=>'delete']) !!}
                                 <td><button type="submit" class="btn btn-danger btn-sm">Hapus</button></td>

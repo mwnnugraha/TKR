@@ -13,12 +13,12 @@
 
                               <div class="form-group{{ $errors->has('testimonni') ? 'has-error' : '' }}">
                             <div>
-                                {!! Form::label('testimonni','Testimoni :',['class'=>'col-md-4 col-md-offset-2']) !!}
+                                {!! Form::label('testimoni','Testimoni :',['class'=>'col-md-4 col-md-offset-2']) !!}
                                 
                             </div>
                                 <div class="col-md-4">
-                                    <input type="text" name="testimoni" class="btn btn-default btn-block" required=""></input>
-                                    {!! $errors->first('testimonni','<p class="help-block">:message</p>') !!}
+                                    <textarea name="testimoni" class="btn btn-default btn-block" style="height: 200px; width: 250px" required=""></textarea>
+                                    {!! $errors->first('testimoni','<p class="help-block">:message</p>') !!}
                                 </div>
                             </div>
 

@@ -48,8 +48,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
-                <a class="navbar-brand" href="index.html">TKR</a>
                 <img src="{{asset('img/'.$komponen->logo)}}" style="height: 50px">
             </div>
             <!-- /.navbar-header -->
@@ -66,28 +64,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 						<li class="m_2"><a href="{{ route('logout') }} " onclick="event.preventDefault();
- document.getElementById('logout-form').submit();"><i class="fa fa-lock"></i> Logout</a></li>
+                        document.getElementById('logout-form').submit();"><i class="fa fa-lock"></i> Logout</a></li>
 
 
-  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-   {{ csrf_field() }}
- </form>
+                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                         {{ csrf_field() }}
+                 </form>
 
 
 	        		</ul>
 	      		</li>
 			</ul>
-			<form class="navbar-form navbar-right">
-              <input type="text" class="form-control" value="Search..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}">
-            </form>
+			
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw nav_icon"></i>Dashboard</a>
+                            <a href="{{url('/home')}}"><i class="fa fa-dashboard fa-fw nav_icon"></i>Dashboard</a>
                         </li>
+
                         <li>
-                            <a href="{{route('kurikulum.index')}}"><i class="fa fa-indent nav_icon"></i>Kurikulum</a>
+                            <a href="{{route('komponen.edit',1)}}"><i class="fa fa-table nav_icon"></i>Komponen</a>
+                          
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                        <li>
+                            <a href="{{route('prestasi.index')}}"><i class="fa fa-indent nav_icon"></i>Prestasi</a>
                            
                             <!-- /.nav-second-level -->
                         </li>
@@ -104,18 +107,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                            
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
-                            <a href=""><i class="fa fa-table nav_icon"></i>Kontak</a>
-                          
-                            <!-- /.nav-second-level -->
-                        </li>
-
-                          <li>
-                            <a href="{{route('komponen.edit',1)}}"><i class="fa fa-table nav_icon"></i>Komponen</a>
-                          
-                            <!-- /.nav-second-level -->
-                        </li>
-                      
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->

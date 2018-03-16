@@ -39,9 +39,10 @@ class AlumniController extends Controller
     public function store(Request $request)
     {
 
+
         $alumni= new alumni;
         $alumni->nama = $request->nama;
-        $alumni->testimonni = $request->testimonni;
+        $alumni->testimoni = $request->testimoni;
 
         if ($request->hasFile('foto')) {
         $file = $request->file('foto');

@@ -2,6 +2,8 @@
 $komponen=App\Komponen::find(1);
 $fasilitas=App\Fasilitas::all();
 $kerjasama=App\Perusahaan::all();
+$prestasi=App\prestasi::all();
+$alumni=App\alumni::all();
 @endphp
 <!DOCTYPE html>
 <html lang="en">
@@ -52,6 +54,9 @@ $kerjasama=App\Perusahaan::all();
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#features">Kurikulum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#prestasi">Prestasi</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#portfolios">Fasilitas</a>
@@ -119,7 +124,7 @@ $kerjasama=App\Perusahaan::all();
         <div class="section-header">          
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Profil TKR</h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s"><br>
-          <h1><img src="{{asset('img/tkr1.jpg')}}" style="height: 100px  width: 100px">
+          <h1><img src="{{asset('img/tkr.jpg')}}" style="height: 100px  width: 100px">
           <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">{{$komponen->profil}} </p>
         </div>
         <p></p>
@@ -157,7 +162,49 @@ $kerjasama=App\Perusahaan::all();
         <div/>
       </div>
     </section>
-    <!-- Features Section End -->    
+    <!-- Features Section End -->
+
+
+
+
+    <section id="prestasi" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Prestasi</h2>
+          <p class="section-subtitle">
+        </div>
+        <div class="row">          
+          <div class="col-md-12">
+          </div>
+
+          <!-- Portfolio Recent Projects -->
+          <div id="prestasi" class="row">
+            @foreach($prestasi as $data)
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
+              <div class="prestasi-item">
+                <div class="shot-item">
+                <img src="{{asset('image/'.$data->gambar)}}" alt="" style="height: 50px width: 50px"> 
+                  <a class="overlay lightbox" href="{{asset('image/'.$data->gambar)}}">
+                    <i class="lnr lnr-eye item-icon"></i>
+                  </a>
+                 <center> <p>{{$data->judul}}</p></center>
+                </div>               
+              </div>
+            </div>
+             @endforeach
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <!-- Container Ends -->
+    </section>    
+
+
+
+
+
 
     <!-- Portfolio Section -->
     <section id="portfolios" class="section">
@@ -195,6 +242,11 @@ $kerjasama=App\Perusahaan::all();
     </section>
     <!-- Portfolio Section Ends --> 
 
+
+
+
+
+
     <!-- Team section Start -->
     <section id="team" class="section">
       <div class="container">
@@ -214,6 +266,11 @@ $kerjasama=App\Perusahaan::all();
     </section>
     <!-- Team section End -->
 
+
+
+
+    
+
     <!-- testimonial Section Start -->
     <div id="testimonial" class="section" data-stellar-background-ratio="0.1">
       <div class="container">
@@ -221,42 +278,21 @@ $kerjasama=App\Perusahaan::all();
         <div class="row justify-content-md-center">
           <div class="col-md-12">
             <div class="touch-slider owl-carousel owl-theme">
-              <div class="testimonial-item">
-                <img src="{{asset('mate/img/testimonial/a.png')}}" alt="Client Testimonoal" 
-                style="height: 200px; width: 200px" />
-                <div class="testimonial-text">
-                 <p>Mantap.. Lulusan seperti ini (SMK Assalaam Bandung), yang dibutuhkan oleh dunia industri Disiplin,Terampil, dan Siap pakai, pertahankan terus kualitas lulusan SMK Assalaam Bandung.</p>
-                  <h3>Jafar sidik</h3>
-                  <span>Mekanik Toyota PT. WIJAYA LESTARI DAGO </span>
-                </div>
-              </div>
+           
 
-              <div class="testimonial-item">
-                <img src="{{asset('mate/img/testimonial/customer2.jpg')}}" alt="Client Testimonoal"  style="height: 200px; width: 200px" />
-                <div class="testimonial-text">
-                  <p>Mantap.. Lulusan seperti ini (SMK Assalaam Bandung), yang dibutuhkan oleh dunia industri Disiplin,Terampil, dan Siap pakai, pertahankan terus kualitas lulusan SMK Assalaam Bandung.</p>
-                  <h3>Jafar sidik</h3>
-                  <span>Mekanik Toyota PT. WIJAYA LESTARI DAGO </span>
-                </div>
-              </div>
 
+              
+               
+            @foreach ($alumni as $data)
               <div class="testimonial-item">
-                <img src="{{asset('mate/img/testimonial/customer3.jpg')}}" alt="Client Testimonoal"  style="height: 200px; width: 200px"/>
+                <img src="{{asset('image/'.$data->foto)}}" alt="Client Testimonoal"  style="height: 200px; width: 200px"/>
                 <div class="testimonial-text">
-                  <p>Mantap.. Lulusan seperti ini (SMK Assalaam Bandung), yang dibutuhkan oleh dunia industri Disiplin,Terampil, dan Siap pakai, pertahankan terus kualitas lulusan SMK Assalaam Bandung.</p>
-                  <h3>Jafar sidik</h3>
-                  <span>Mekanik Toyota PT. WIJAYA LESTARI DAGO </span>
+                  <p>{!!$data->testimoni!!}</p>
+                  <h3>{!!$data->nama!!}</h3>
+                  
                 </div>
               </div>
-
-              <div class="testimonial-item">
-                <img src="{{asset('mate/img/testimonial/customer4.jpg')}}" alt="Client Testimonoal"  style="height: 200px; width: 200px"/>
-                <div class="testimonial-text">
-                  <p>Mantap.. Lulusan seperti ini (SMK Assalaam Bandung), yang dibutuhkan oleh dunia industri Disiplin,Terampil, dan Siap pakai, pertahankan terus kualitas lulusan SMK Assalaam Bandung.</p>
-                  <h3>Jafar sidik</h3>
-                  <span>Mekanik Toyota PT. WIJAYA LESTARI DAGO </span>
-                </div>
-              </div>
+          @endforeach
 
             </div>
           </div>
@@ -290,37 +326,6 @@ $kerjasama=App\Perusahaan::all();
                 </div>
               </div>
             </div>     
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-              <div class="contact-block">
-                <form id="contactForm">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Nama" required data-error="Please enter your name">
-                        <div class="help-block with-errors"></div>
-                      </div>                                 
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" placeholder="Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-                        <div class="help-block with-errors"></div>
-                      </div> 
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group"> 
-                        <textarea class="form-control" id="message" placeholder="Pesan" rows="8" data-error="Write your message" required></textarea>
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <div class="submit-button text-center">
-                        <button class="btn btn-common" id="submit" type="submit">Kirim</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                        <div class="clearfix"></div> 
-                      </div>
-                    </div>
-                  </div>            
-                </form>
-              </div>
-            </div>
           </div>
         </div>
       </div>           
@@ -334,19 +339,6 @@ $kerjasama=App\Perusahaan::all();
           <!-- Footer Links -->
           <div class="col-lg-6 col-sm-6 col-xs-12">
             <ul class="footer-links">
-              <li>
-                <a href="#">Homepage</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
           </div>
           <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="copyright">

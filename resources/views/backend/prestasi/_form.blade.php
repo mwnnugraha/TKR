@@ -6,7 +6,7 @@
                                 
                             </div>
                                 <div class="col-md-4">
-                                    {!! Form::text('judul',null,['class'=>'form-control']) !!}
+                                     <input type="text" name="judul" class="btn btn-default btn-block" required=""></input>
                                     {!! $errors->first('judul','<p class="help-block">:message</p>') !!}
                                 </div>
                             </div>
@@ -34,3 +34,4 @@
                                 </center>
                                 </div>
                             </div>
+
